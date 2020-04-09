@@ -24,4 +24,4 @@ This is the login page where users can input their information to login.
 
 # Division of Labor
 
-Zack Kochanski - Created wireframes, created HTML and CSS pages, created markdown document.
+Zack Kochanski - Created wireframes, created HTML and CSS pages, created markdown document. 
