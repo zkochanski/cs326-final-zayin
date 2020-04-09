@@ -20,6 +20,7 @@ This is the current main page of the website, or the map page. It has the naviga
 
 ![login page](../images/loginimg.png)
 
+![login page](../images/loginpass.png)
 This is the login page where users can input their information to login. 
 
 # Division of Labor
