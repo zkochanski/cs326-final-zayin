@@ -12,3 +12,34 @@
     width:225px;
     text-decoration:none; 
 }
+#map {
+    margin:50px 50px;
+    border:2px solid gray;
+}
+#directionsbox {
+    margin:50px 50px;
+    width:500px;
+    height:755px;
+    border:2px solid gray;
+}
+#directions{
+    text-align:center;
+}
+#loginbox{
+    text-align:center;
+    width:300px;
+    height:400px;
+    margin:  auto;
+    border-radius:10px 10px 10px 10px;
+}
+.logpass {
+    background-color:white;
+    padding:15px 32px;
+    text-align:center;
+    display:inline-block;
+    font-size:16px;
+    margin:40px 0px 0px 0px;
+    width:200px;
+    border:2px solid white;
+    border-radius:5px 5px 5px 5px;
+}
