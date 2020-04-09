@@ -20,10 +20,17 @@ This is the current main page of the website, or the map page. It has the naviga
 
 ![login page](../images/loginimg.png)
 
-![login page](../images/loginpass.png)
+![login page1](../images/loginpass.png)
 This is the login page where users can input their information to login. 
+
+![forum page](../images/forum-first-version.png)
+(version 1)
+![login page1](../images/forum-first-version1.png)
+(version 2)
+This is the forum page where users can post their thoughts and information that they want to share.
 
 # Division of Labor
 
 Zack Kochanski - Created wireframes, created HTML and CSS pages, created markdown document. 
-Mofei Xiao - Revised login content of the login.hmtl 
+
+Mofei Xiao - Revised login content of the login.hmtl  and created content of forum.html.
