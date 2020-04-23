@@ -25,6 +25,15 @@
 #directions{
     text-align:center;
 }
+#legendbox {
+    margin:50px 50px;
+    width:500px;
+    height:755px;
+    border:2px solid gray;
+}
+#legend{
+    text-align:center;
+}
 #loginbox{
     text-align:center;
     width:300px;
@@ -44,5 +53,8 @@
     border-radius:5px 5px 5px 5px;
 }
 #login101{
+    text-align:center;
+}
+#signup101{
     text-align:center;
 }

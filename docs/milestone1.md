@@ -16,7 +16,7 @@ This is the wireframe for the forums, where users can discuss different routes a
 
 ![map page](../images/mappageimg.png)
 
-This is the current main page of the website, or the map page. It has the navigation bar up top. The map shows all the buildings and pathways in the Honors College. Users will click on two points of the map and a continuous line will appear between the two points, showing the path that will take the least amount of time for a wheelchair-bound person. The direction box will have text appear showing each step of the way.
+This is the current main page of the website, or the map page. It has the navigation bar up top. The map shows all the buildings and pathways in the Honors College. Users will click on two points of the map and a continuous line will appear between the two points, showing the path that will take the least amount of time for a wheelchair-bound person. The direction box will have text appear showing each step of the way. A legend box will serve to define symbols on the map for navigation to useful markers and resources.
 
 ![login page](../images/loginimg.png)
 
@@ -25,7 +25,7 @@ This is the login page where users can input their information to login.
 
 ![forum page](../images/forum-first-version.png)
 (version 1)
-![login page1](../images/forum-first-version1.png)
+![forum page1](../images/forum-first-version1.png)
 (version 2)
 This is the forum page where users can post their thoughts and information that they want to share.
 
@@ -34,3 +34,5 @@ This is the forum page where users can post their thoughts and information that 
 Zack Kochanski - Created wireframes, created HTML and CSS pages, created markdown document. 
 
 Mofei Xiao - Revised login content of the login.hmtl  and created content of forum.html.
+
+Kinsley Aikeins - Added working links between HTML pages, added legend box to mappage.html, created signup.html and updated styles.css
