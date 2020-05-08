@@ -5,7 +5,7 @@
 4.	Overview: A brief overview of your application. This will be based on what you are submitting as your final web application artifact. You should also mention why your application
 It is innovative because there is no one has worked on this kind of project. It has every converter from length to temperatures, You can find pretty much every converter and a calculator tool on the websites and you can post the discussion you want to post in the forum and you can login in to view further content and further function
 
-Team Members: Zack Kochanski  Kinsley
+Team Members: Zack Kochanski  Kinsley Aikeins Mofei Xiao
 5.	
 
 # Wireframes
@@ -54,17 +54,21 @@ For our API, we will need CRUD operations for each of 2 objects.
 /mappage/direction which allows for a new direction from one point to another point to be seen forum to be added
 
 7.	Database: A final up-to-date representation of your database including a brief description of each of the entities in your data model and their relationships if any.
+/client which allows for talking to the server and updating of HTML document
+/server which performs CRUD operations ideally to and from a database
 
 8.	URL Routes/Mappings: A final up-to-date table of all the URL routes that your application supports and a short description of what those routes are used for. You should also indicate any authentication and permissions on those routes.
+
+Client -Post-> Server
 
 
 Division of Labor: A breakdown of the division of labor for each team member — that is, saying who did what, for the entire project. Remember that everyone is expected to contribute roughly equally to each phase of the project. We expect to see similar numbers and kinds of GitHub commits by each student.
 Division of Labor
 Zack Kochanski - Created wireframes, created HTML and CSS pages, created markdown document.
 Mofei Xiao - Revised login content of the login.hmtl and created content of forum.html. making server.ts  and the JavaScript, html and css code function of converter and calculator.
-Kinsley Aikeins - Added working links between HTML pages, added legend box to mappage.html, created signup.html and updated styles.css
+Kinsley Aikeins - Added working links between HTML pages, created signup.html and updated styles.css, implementation of client and server operations 
 
 Conclusion: A conclusion describing your team’s experience in working on this project. This should include what you learned through the design and implementation process, the difficulties you encountered, what your team would have liked to know before starting the project that would have helped you later, and any other technical hurdles that your team encountered.
 
-We learn that the html and css language and use of JavaScript to program interactive websites. 
+We learn the html and css language and use of JavaScript to program interactive websites. 
 
