@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+        <script src = client.js></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-secondary text-uppercase">
@@ -30,9 +31,15 @@
         Click me to display Date and Time.</button>
         <p id="demo"></p>
 
-        <form action="/action_page.php" method="post">
-        <input type="text" name="fname" required>
-        <input type="submit" value="Submit">
+        <form method="post">
+          <label class="font-weight-normal" >Username:</label>
+          <input type="text" name="username">
+          <label class="font-weight-normal" >Title:</label>
+          <input type="text" name="title">
+          <br>
+          <label class="font-weight-normal" >Post:</label>
+          <input type="text" name="message" required> 
+          <input type="submit" value="Submit" onclick="client.createPost()">
         </form>
 
         <p>If you click submit, without filling out the text field,
@@ -46,33 +53,33 @@
     <small>3 days ago</small>
 
     </div>
-    <p class="mb-1"> View or download a PDF version of our campus map.</p>
-    <small>Posted by mujimei.</small>
-    <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+    <p class="mb-1"> Wow I really love this converter! Really came in handy for my physics hw.</p>
+    <small id = "name">Posted by mujimei.</small>
+    <a class="btn btn-dark btn-lg" href="#" role="button" onclick="">Learn More</a>
   </a>
 
 
 
   <a href="#"  class="list-group-item list-group-item-action list-group-item-secondary ">
     <div >
-      <h1 class="display-4">How to arrive research center in 5 minutes</h1>
-      <small >365 days ago</small>
+      <h1 class="display-4">Math has never been more fun</h1>
+      <small >36 days ago</small>
     </div>
-    <p >Use this link for directions to campus using Google maps.</p>
+    <p >Using this has changed my perception on math as a whole and I think I might switch my major.</p>
     <small class="text-muted">Posted by fasfweaf.</small>
-    <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-dark btn-lg" href="#" role="button" onclick="">Learn More</a>
   </a>
 
 
 
   <a href="#"  class="list-group-item list-group-item-action list-group-item-secondary ">
     <div>
-      <h1 class="display-4">New path to campus pond</h1>
-      <small>3 days ago</small>
+      <h1 class="display-4">New Way to do Conversion Starts Here</h1>
+      <small>365 days ago</small>
     </div>
-    <p >This map shows parking options on campus, as well as buildings, and will create walking directions.</p>
+    <p >Welcome to the Units Converter 4000. For all your conversion needs from metric to imperial</p>
     <small class="text-muted">Posted by AGAOUARGOAKNVOIAN.</small>
-<a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+<a class="btn btn-dark btn-lg" href="#" role="button" onclick="">Learn More</a>
   </a>
 </div>
 
