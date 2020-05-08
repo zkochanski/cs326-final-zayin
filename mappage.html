@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul id="nav" class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href= "mappage.html">Map</a>
+                        <a class="nav-link" href= "mappage.html">Converter</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href= "forums.html">Forum</a>
@@ -22,8 +22,182 @@
                 </ul>
             </div>
         </nav>
-        
-        
+
+<div   class="container p-3 my-3 bg-dark text-white" >
+<h2>Temperature Converter</h2>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<p>Kelvin: <span id="outputKelvin"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+  document.getElementById("outputKelvin").innerHTML=((valNum-32)/1.8)+273.15;
+}
+</script>
+</div>
+<br>
+<br>
+
+<div   class="container p-3 my-3 bg-dark text-white" >
+
+
+
+<title>Pounds to Kilograms Weight Converter</title>
+
+
+<h2>Weight Converter</h2>
+<p>Type a value in the Pounds field to convert the value to Kilograms:</p>
+
+<p>
+  <label>Pounds</label>
+  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilograms"></span></p>
+<p>Ounces: <span id="outputOunces"></span></p>
+<p>Grams: <span id="outputGrams"></span></p>
+<p>Stones: <span id="outputStones"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
+  document.getElementById("outputOunces").innerHTML=valNum*16;
+  document.getElementById("outputGrams").innerHTML=valNum/0.0022046;
+  document.getElementById("outputStones").innerHTML=valNum*0.071429;
+}
+</script>
+
+</div>
+<br>
+<br>
+<!DOCTYPE html>
+<div   class="container p-3 my-3 bg-dark text-white" >
+<title>Feet to Meters Length Converter</title>
+
+
+<h2>Length Converter</h2>
+<p>Type a value in the Feet field to convert the value to Meters:</p>
+
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+<br>
+<p>Inches: <span id="outputInches"></span></p>
+<br>
+<p>cm: <span id="outputcm"></span></p>
+<br>
+<p>Yards: <span id="outputYards"></span></p>
+<br>
+<p>Kilometers: <span id="outputKilometers"></span></p>
+<br>
+<p>Miles: <span id="outputMiles"></span></p>
+
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+  document.getElementById("outputInches").innerHTML=valNum*12;
+  document.getElementById("outputcm").innerHTML=valNum/0.032808;
+  document.getElementById("outputYards").innerHTML=valNum*0.33333;
+  document.getElementById("outputKilometers").innerHTML=valNum/3280.8;
+  document.getElementById("outputMiles").innerHTML=valNum*0.00018939;
+}
+</script>
+</div>
+<br>
+<br>
+<div   class="container p-3 my-3 bg-dark text-white" >
+
+<title>MPH to KPH Speed Converter</title>
+
+
+<h2>Speed Converter</h2>
+<p>Type a value in the MPH field to convert the value to KPH:</p>
+
+<p>
+  <label>MPH</label>
+  <input id="inputMPH" type="number" placeholder="MPH" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+</p>
+<p>KPH: <span id="outputKPH"></span></p>
+<br>
+<p>Knots: <span id="outputKnots"></span></p>
+<br>
+<p>Mach: <span id="outputMach"></span></p>
+
+<script>
+function speedConverter(valNum) {
+  document.getElementById("outputKPH").innerHTML=valNum*1.609344;
+  document.getElementById("outputKnots").innerHTML=valNum/1.150779;
+  document.getElementById("outputMach").innerHTML=valNum/761.207;
+}
+</script>
+</div>
+
+<br>
+<br>
+<div   class="container p-3 my-3 bg-dark text-white" >
+      <script>
+         //function that display value
+         function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+
+         //function that evaluates the digit and return result
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+
+         //function that clear the display
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+      </script>
+      <!-- for styling -->
+
+
+        <div   class="container p-3 my-3 bg-dark text-white" >
+            <h2>Caculator</h2>
+            <input type="text" id="result"/>
+            <!-- clr() function will call clr to clear all value -->
+            <input type="button" value="c" onclick="clr()"/>
+
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <input type="button" value="1" onclick="dis('1')"/>
+            <input type="button" value="2" onclick="dis('2')"/>
+            <input type="button" value="3" onclick="dis('3')"/>
+            <input type="button" value="4" onclick="dis('4')"/>
+            <input type="button" value="5" onclick="dis('5')"/>
+            <input type="button" value="6" onclick="dis('6')"/>
+            <input type="button" value="7" onclick="dis('7')"/>
+            <input type="button" value="8" onclick="dis('8')"/>
+            <input type="button" value="9" onclick="dis('9')"/>
+            <input type="button" value="/" onclick="dis('/')"/>
+            <input type="button" value="-" onclick="dis('-')"/>
+            <input type="button" value="+" onclick="dis('+')"/>
+            <input type="button" value="." onclick="dis('.')"/>
+            <input type="button" value="0" onclick="dis('0')"/>
+            <input type="button" value="=" onclick="solve()"/>
+            <input type="button" value="*" onclick="dis('*')"/>
+
+
+            </div>
+
         <img src="images/map.png" class="rounded float-left" alt="Honors College Map" id="map">
         <div id="directionsbox" class="float-right">
             <h2 id="directions">Directions:</h1>
@@ -44,7 +218,7 @@
             </p>
         </div>
 
-        
+
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
